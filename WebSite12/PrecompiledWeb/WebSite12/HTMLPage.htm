@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Покемоний рай</title>
+    <META Name="autor" Content="Tavartkiladze Nina">    
+    <meta name="Keywords" content="мир покемонов">
+    <meta name="Description" content="все из жизни покемонов и их семей">
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="JQ/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script  src="JQ/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="Sweetalert/lib/sweeta-lert.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="Sweetalert/sweetalert.css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+    <link href="bootstrap-tour-0.10.2/build/css/bootstrap-tour.min.css" rel='stylesheet'>
+    <script src="bootstrap-tour-0.10.2/build/js/bootstrap-tour.min.js" type="text/javascript"></script>
+  
+<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+</head>
+
+<style type="text/css">
+ .head{ height:100%; width:100%; vertical-align; display:block;}
+ .headpic{height:100%; width:100%;}
+ 
+ .topic1{  border:solid 2px black; width:33%;  padding: 2px 50px 2px 50px; height:80px; font-style:normal; font-size:60px; margin-top:30px; display:block; margin-left:300px;}
+ .super{ margin-top:100px;}
+  .conteiner1{display: -webkit-flex; display: flex; flex-flow: row wrap;justify-content: space-around; }
+  .conteiner2{display: -webkit-flex; display: flex; flex-flow: row wrap;justify-content: space-around;}
+  .conteiner3{display: -webkit-flex; display: flex; flex-flow: row wrap;justify-content: space-around;}
+  .conteiner4{display: -webkit-flex; display: flex; flex-flow: row wrap;justify-content: space-around;} 
+
+   .conteiner5{display: -webkit-flex; display: flex; flex-flow: row wrap;justify-content: space-around;}
+   .conteiner6{display: -webkit-flex; display: flex; flex-flow: row wrap;justify-content: space-around;}
+   
+   
+   
+    .row {width: 33%; margin: auto; }
+    
+  .thumbnail{border-color:White;}
+  
+  .myplaceCounts{ margin-right:100px;  display:block;  }
+  
+#buttonmore{display:block; margin-left:33%;}        
+</style>
+
+<body>
+<script type="text/javascript">
+    swal({ title: "Ну, Здрасьте )))", text: "Приветсвую тебя покемономан",
+        imageUrl: "Im/a1.png"
+    });
+
+</script>
+
+<header>  
+  <div class="head">
+    <img src="Im/head.jpg" alt="Большой любитель дождется..." class="headpic">
+  </div>
+</header>
+
+<main>
+<div  class="topic1">Pokedex</div>
+
+
+<div class="super" id="super">
+<div class="conteiner1">
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="Im/a1.png">
+      <div class="caption">
+        <h3>Булабазар</h3>
+        <p><a class="btn btn-success" role="button" onclick='OneInfoShow()'>Grass</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="Im/a2.png">
+      <div class="caption">
+        <h3>Командос</h3>
+        <p><a class="btn btn-danger" role="button"  onclick='TwoInfoShow()'>Fire</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="Im/a3.png">
+      <div class="caption">
+        <h3>Пиноккио</h3>
+       <p><a href="#" class="btn btn-primary" role="button" onclick=''>Electric</a> </p>
+      </div>
+    </div>
+    </div>
+</div>
+
+</div>
+
+
+<div class="conteiner2">
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="Im/a2.png">
+      <div class="caption">
+        <h3>Бульбашик</h3>
+       <p><a href="#" class="btn btn-success" role="button" onclick=''>Grass</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="Im/a5.jpeg">
+      <div class="caption">
+        <h3>Карбамид</h3>
+       <p><a href="#" class="btn btn-danger" role="button">Fire</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="Im/a1.png">
+      <div class="caption">
+        <h3>Пиноколада</h3>
+        <p><a href="#" class="btn btn-primary" role="button" onclick=''>Electric</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+  <div class="myplace" id="myplace"> </div>
+<div class="newitem" id="target"></div>
+
+
+
+<button type="button" class="btn btn-primary btn-lg" id="buttonmore" onclick='LoadMore()'>Load More...</button>
+
+</main>
+
+<script type="text/javascript">
+    var one
+    var a1
+    var two;
+    var a3;
+
+    function LoadMore() {
+        one.innerHTML = " "; ;
+
+        var BBB = document.getElementById("target");
+        var lode = document.createElement("div");
+
+        BBB.appendChild(lode);
+
+
+        lode.innerHTML = "<div>" +
+        "<div class='conteiner5'>" +
+"<div class='row'>" +
+  "<div class='col-sm-6 col-md-4'>" +
+    "<div class='thumbnail'>" +
+     " <img src='Im/a4.gif' >" +
+     " <div class='caption'>" +
+       " <h3>Бегунок</h3>" +
+        "<p><a href='#' class='btn btn-success' role='button'>Gras</a></p>" +
+     " </div>" +
+    "</div>" +
+ " </div>" +
+"</div>" +
+"<div class='row'>" +
+  "<div class='col-sm-6 col-md-4'>" +
+   " <div class='thumbnail'>" +
+     " <img src='Im/a4.gif'>" +
+      "<div class='caption'>" +
+       " <h3>Бегунок</h3>" +
+        " <p><a href='#' class='btn btn-danger' role='button'>Fire</a></p>" +
+      "</div>" +
+   " </div>" +
+  "</div>" +
+"</div>" +
+"<div class='row'>" +
+  "<div class='col-sm-6 col-md-4'>" +
+    "<div class='thumbnail'>" +
+      "<img src='Im/a4.gif'" +
+      "<div class='caption'>" +
+        "<h3>Бегунок</h3>" +
+        "<p><a href='#' class='btn btn-primary' role='button'>Electric</a></p>" +
+      "</div>" +
+   " </div>" +
+ " </div>" +
+"</div>" +
+"</div>" +
+  "</div>";
+    }
+
+
+
+    function OneInfoShow() {
+        one = document.getElementById("myplace");
+        a1 = document.createElement("div");
+        one.appendChild(a1);
+
+        a1.style.width = " 200px";
+        a1.style.height = "200px";
+        a1.style.position = 'absolute';
+        a1.style.border = 'solid 3px #5c7598';
+        a1.style.marginTop = "5px";
+        a1.style.marginLeft = "650px";
+        a1.style.fontSize = "20px";
+        a1.innerHTML = "<a>l. Имя Бульбазар</br></a>" +
+        "<a>2.Возраст 200дней</br></a>" +
+        "<a>3.Вес 1400гк</a>";
+        a3.innerHTML = " ";
+
+    }
+
+    function TwoInfoShow() {
+        a1.innerHTML = " ";
+
+        two = document.getElementById("myplace");
+        a3 = document.createElement("div");
+        var a4 = document.createElement("a");
+        two.appendChild(a3);
+
+
+        a3.style.width = " 200px";
+        a3.style.height = "200px";
+        a3.style.position = 'absolute';
+        a3.style.border = 'solid 3px #5c7598';
+        a3.style.marginTop = "5px";
+        a3.style.marginLeft = "650px";
+        a3.style.fontSize = "20px";
+        a3.innerHTML = "<a>l. Имя Командос</br></a>" +
+        "<a>2.Возраст 300дней</br></a>" +
+        "<a>3.Вес 5500гк</a>";
+    }
+</script>    
+
+  </body>
+</html>
